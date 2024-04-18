@@ -1,10 +1,11 @@
-let btn = document.getElementById('btn');
+var btn = document.getElementById('btn');
 function scanner(){
-    let input11 = document.getElementById('input1').value;
-    let input22 = document.getElementById('input2').value;
-    let finish = input11.includes(input22);
-    console.log(finish);
+    var input1 = document.getElementById("input1").value;
+    var input2 = document.getElementById("input2").value;
+    var finish = input1.includes(input2);
+    document.getElementById("p").textContent = finish;
 }
+btn.onclick = scanner;
 
 /*
 let hel = prompt("Welchen Text");
